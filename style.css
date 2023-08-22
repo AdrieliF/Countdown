@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--white: #FFF;
+  --text-color: #9C9AB6;
+  --light-grey: #C8C8C8;
+
+  font-size: 62.5%;
+}
+
+body, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+header img {
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 3rem;
+}
+
+.time {
+  display: flex;
+  gap: 8.4rem;
+  padding-left: 3.2rem;
+}
+
+.time p {
+  color: var(--light-grey); 
+  font-size: 1.4rem;
+}
+ 
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.countdown p {
+  color: var(--black);
+  font-size: 7rem;
+}
+
+main .text {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-top: 4.6rem;
+}
+
+.hero img {
+  width: 45vw;
+}
+
+button {
+  background: var(--purple);
+  border: none;
+  border-radius: 1rem;
+  padding: 1.4rem 3.2rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  margin-top: 3.1rem;
+  width: 16rem;
+  cursor: pointer;
+}
+
+footer img {
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  header img,
+  footer img {
+    width: 100vw;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .time {
+    padding-left: 1.2rem;
+    gap: 2rem;
+  }
+
+  .counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .countdown {
+    gap: 1.2rem;
+  }
+
+  .countdown p {
+    font-size: 3.6rem;
+  }
+
+  .hero img {
+    width: 80vw;
+  }
+
+  main .text {
+    text-align: center;
+  }
+
+  button {
+    width: 12rem;
+    font-size: 1.2rem;
+    padding: 1.4rem 2rem;
+  }
+}
