@@ -105,6 +105,7 @@ footer img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
   }
 
   h1 {
